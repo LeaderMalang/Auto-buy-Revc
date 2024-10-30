@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import app from "./app.js";
 
 const PORT = process.env.PORT || 5001;
+const HOST = process.env.HOST || '0.0.0.0'; 
 console.log(process.env.MONGO_URI);
 const main = async () => {
   mongoose.set("strictQuery", false);
@@ -17,7 +18,7 @@ const main = async () => {
       console.log("DB NOT CONNECTED :(");
     });
 
-  app.listen(PORT, () => console.log(`Server is Listining on PORT ${PORT}`));
+  app.listen(PORT,HOST, () => console.log(`Server running at http://${HOST}:${PORT}``));
 };
 
 main().catch((error) => {
