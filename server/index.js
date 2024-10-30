@@ -18,7 +18,7 @@ const main = async () => {
       console.log("DB NOT CONNECTED :(");
     });
 
-  app.listen(PORT,HOST, () => console.log(`Server running at http://${HOST}:${PORT}``));
+  app.listen(PORT,HOST, () => console.log(`Server is Listining on PORT ${PORT}`));
 };
 
 main().catch((error) => {
