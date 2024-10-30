@@ -3,7 +3,7 @@ import { HeroSection } from "./pages";
 import { CHAIN_ID } from "./ConnectivityAssets/hooks";
 import { useAccount, useSwitchChain } from "wagmi";
 
-export const serverUrl = import.meta.env.PROD ? "" : "http://localhost:5001";
+export const serverUrl = import.meta.env.PROD ? "" : "http://157.173.197.127:5001";
 
 function App() {
   const { address, chainId } = useAccount();
