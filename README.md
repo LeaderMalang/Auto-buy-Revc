@@ -1,7 +1,3 @@
-Here’s a comprehensive **README** for your project:
-
----
-
 # Revolve Credit (REVC)
 
 **Revolve Credit (REVC)** is a decentralized utility token deployed on the Binance Smart Chain (BSC). It enables automated minting through USDT transactions, where users can specify the number of cycles for swapping. The smart contract facilitates minting, transferring, and holding of REVC tokens with metrics tracking and transparent auditing.
