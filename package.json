@@ -1,0 +1,6 @@
+{
+    "scripts": {
+  "build": "npm run build --prefix client",
+  "start": "node server/index.js"
+    }
+}
