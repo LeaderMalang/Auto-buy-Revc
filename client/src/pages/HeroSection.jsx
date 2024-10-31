@@ -97,8 +97,8 @@ const HeroSection = () => {
           tokenReadFunction("getOverallValue"),
           tokenReadFunction("getBNBBalance"),
         ]);
-      // console.log(supplyValue, transferValue, swapValue, usdValue);
-
+       
+      //bnbBalance=bnbBalance.replace('n','')
       // console.log(formatUnits(usdValue, tokenDecimals), "usdValue");
 
       setOverAllValues({
@@ -106,8 +106,9 @@ const HeroSection = () => {
         transferValue: Number(transferValue?.toString()),
         swapValue: fixedUnits(swapValue?.toString(), tokenDecimals, 2),
         usdValue: fixedUnits(usdValue?.toString(), tokenDecimals, 2),
-        bnbBalance: fixedUnits(bnbBalance?.toString(), 18, 2),
+        bnbBalance: fixedUnits(bnbBalance?.toString(), tokenDecimals, 8),
       });
+      
     } catch (e) {
       console.log(e);
     }
