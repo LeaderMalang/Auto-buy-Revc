@@ -8,7 +8,7 @@ import {
 } from "@wagmi/core";
 import { config } from "../utils/Web3ModalProvider";
 
-export const CHAIN_ID = 97;
+export const CHAIN_ID = 56;
 
 export const tokenReadFunction = async (functionName, args) => {
   const data = await readContract(config, {

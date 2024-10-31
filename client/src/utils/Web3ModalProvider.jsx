@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { bscTestnet } from "wagmi/chains";
+import { bsc } from "wagmi/chains";
 import { createWeb3Modal, defaultWagmiConfig } from "@web3modal/wagmi/react";
 import { WagmiProvider } from "wagmi";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -8,7 +8,7 @@ const queryClient = new QueryClient();
 
 const projectId = "cba73ada547c01c1a64d7725fb732495";
 
-const chains = [bscTestnet];
+const chains = [bsc];
 
 export const config = defaultWagmiConfig({
   chains,
